@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lagrange.Desktop/1.0.0": {
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.2.2",
+          "Panuon.WPF.UI": "1.2.3.1"
+        },
+        "runtime": {
+          "Lagrange.Desktop.dll": {}
+        }
+      },
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.2.1"
+          }
+        }
+      },
+      "Panuon.WPF/1.1.1": {
+        "runtime": {
+          "lib/net8.0-windows/Panuon.WPF.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
+      "Panuon.WPF.UI/1.2.3.1": {
+        "dependencies": {
+          "Panuon.WPF": "1.1.1"
+        },
+        "runtime": {
+          "lib/net8.0-windows/Panuon.WPF.UI.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lagrange.Desktop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommunityToolkit.Mvvm/8.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r0g0k9tGYdrnz8R7T3x5UiokDffeevzK/2P/9SBL6fqLgN8B157MIi/bVUWI1KAz6ZorZrK9AdABCWUeXZZsvA==",
+      "path": "communitytoolkit.mvvm/8.2.2",
+      "hashPath": "communitytoolkit.mvvm.8.2.2.nupkg.sha512"
+    },
+    "Panuon.WPF/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HwkMU3eqOU5NfNYRVqdxFwgBkUN1kBO8dPNPGch9IIhozgN/Vg8HNKnl3hzO/wTxyoec/lCZt1u8qO5DChLpRg==",
+      "path": "panuon.wpf/1.1.1",
+      "hashPath": "panuon.wpf.1.1.1.nupkg.sha512"
+    },
+    "Panuon.WPF.UI/1.2.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ad1q8+kBDSaWFKuK8GjpQjQwyyFEEMzW4PFitHcXcjplO4sAxzaP9Bo2yvZc8/NokoTOoT9fhKJzmEzN2W0Mrg==",
+      "path": "panuon.wpf.ui/1.2.3.1",
+      "hashPath": "panuon.wpf.ui.1.2.3.1.nupkg.sha512"
+    }
+  }
+}

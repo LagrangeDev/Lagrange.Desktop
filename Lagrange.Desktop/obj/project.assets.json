@@ -1,0 +1,234 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "CommunityToolkit.Mvvm/8.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "Panuon.WPF/1.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows/Panuon.WPF.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows/Panuon.WPF.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Panuon.WPF.UI/1.2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Panuon.WPF": "1.1.1"
+        },
+        "compile": {
+          "lib/net8.0-windows/Panuon.WPF.UI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows/Panuon.WPF.UI.dll": {
+            "related": ".pdb"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommunityToolkit.Mvvm/8.2.2": {
+      "sha512": "r0g0k9tGYdrnz8R7T3x5UiokDffeevzK/2P/9SBL6fqLgN8B157MIi/bVUWI1KAz6ZorZrK9AdABCWUeXZZsvA==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
+    "Panuon.WPF/1.1.1": {
+      "sha512": "HwkMU3eqOU5NfNYRVqdxFwgBkUN1kBO8dPNPGch9IIhozgN/Vg8HNKnl3hzO/wTxyoec/lCZt1u8qO5DChLpRg==",
+      "type": "package",
+      "path": "panuon.wpf/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Panuon.WPF.dll",
+        "lib/net452/Panuon.WPF.pdb",
+        "lib/net462/Panuon.WPF.dll",
+        "lib/net462/Panuon.WPF.pdb",
+        "lib/net472/Panuon.WPF.dll",
+        "lib/net472/Panuon.WPF.pdb",
+        "lib/net48/Panuon.WPF.dll",
+        "lib/net48/Panuon.WPF.pdb",
+        "lib/net5.0-windows/Panuon.WPF.dll",
+        "lib/net5.0-windows/Panuon.WPF.pdb",
+        "lib/net6.0-windows/Panuon.WPF.dll",
+        "lib/net6.0-windows/Panuon.WPF.pdb",
+        "lib/net7.0-windows/Panuon.WPF.dll",
+        "lib/net7.0-windows/Panuon.WPF.pdb",
+        "lib/net8.0-windows/Panuon.WPF.dll",
+        "lib/net8.0-windows/Panuon.WPF.pdb",
+        "lib/netcoreapp3.1/Panuon.WPF.dll",
+        "lib/netcoreapp3.1/Panuon.WPF.pdb",
+        "nuget.exe",
+        "panuon.wpf.1.1.1.nupkg.sha512",
+        "panuon.wpf.nuspec",
+        "批量复制.bat"
+      ]
+    },
+    "Panuon.WPF.UI/1.2.3.1": {
+      "sha512": "ad1q8+kBDSaWFKuK8GjpQjQwyyFEEMzW4PFitHcXcjplO4sAxzaP9Bo2yvZc8/NokoTOoT9fhKJzmEzN2W0Mrg==",
+      "type": "package",
+      "path": "panuon.wpf.ui/1.2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net452/Panuon.WPF.UI.dll",
+        "lib/net452/Panuon.WPF.UI.pdb",
+        "lib/net462/Panuon.WPF.UI.dll",
+        "lib/net462/Panuon.WPF.UI.pdb",
+        "lib/net472/Panuon.WPF.UI.dll",
+        "lib/net472/Panuon.WPF.UI.pdb",
+        "lib/net48/Panuon.WPF.UI.dll",
+        "lib/net48/Panuon.WPF.UI.pdb",
+        "lib/net5.0-windows/Panuon.WPF.UI.dll",
+        "lib/net5.0-windows/Panuon.WPF.UI.pdb",
+        "lib/net6.0-windows/Panuon.WPF.UI.dll",
+        "lib/net6.0-windows/Panuon.WPF.UI.pdb",
+        "lib/net7.0-windows/Panuon.WPF.UI.dll",
+        "lib/net7.0-windows/Panuon.WPF.UI.pdb",
+        "lib/net8.0-windows/Panuon.WPF.UI.dll",
+        "lib/net8.0-windows/Panuon.WPF.UI.pdb",
+        "lib/netcoreapp3.1/Panuon.WPF.UI.dll",
+        "lib/netcoreapp3.1/Panuon.WPF.UI.pdb",
+        "nuget.exe",
+        "panuon.wpf.ui.1.2.3.1.nupkg.sha512",
+        "panuon.wpf.ui.nuspec",
+        "批量复制.bat"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "CommunityToolkit.Mvvm >= 8.2.2",
+      "Panuon.WPF.UI >= 1.2.3.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kaito\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Project\\Lagrange.Desktop\\Lagrange.Desktop\\Lagrange.Desktop.csproj",
+      "projectName": "Lagrange.Desktop",
+      "projectPath": "C:\\Project\\Lagrange.Desktop\\Lagrange.Desktop\\Lagrange.Desktop.csproj",
+      "packagesPath": "C:\\Users\\kaito\\.nuget\\packages\\",
+      "outputPath": "C:\\Project\\Lagrange.Desktop\\Lagrange.Desktop\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kaito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.2.2, )"
+          },
+          "Panuon.WPF.UI": {
+            "target": "Package",
+            "version": "[1.2.3.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
