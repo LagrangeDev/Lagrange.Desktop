@@ -21,4 +21,8 @@
     <Resource Include="Resources\Logo.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lagrange.Core\Lagrange.Core\Lagrange.Core.csproj" />
+  </ItemGroup>
+
 </Project>
