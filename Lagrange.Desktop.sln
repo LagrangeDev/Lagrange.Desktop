@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lagrange.Desktop", "Lagrange.Desktop\Lagrange.Desktop.csproj", "{10EFD5D4-8617-4DE4-A809-06D104FFF32B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagrange.Desktop", "Lagrange.Desktop\Lagrange.Desktop.csproj", "{10EFD5D4-8617-4DE4-A809-06D104FFF32B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lagrange.Core", "Lagrange.Core", "{25A7B6AD-C462-48CD-8428-7CC76B9A5F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lagrange.Core", "Lagrange.Core\Lagrange.Core\Lagrange.Core.csproj", "{54654AE2-25C4-430E-BF04-344D23926F07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagrange.Core", "Lagrange.Core\Lagrange.Core\Lagrange.Core.csproj", "{54654AE2-25C4-430E-BF04-344D23926F07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagrange.OneBot", "Lagrange.Core\Lagrange.OneBot\Lagrange.OneBot.csproj", "{CFE7D22A-71E9-4444-B9C2-8157F91BFC79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +25,19 @@ Global
 		{54654AE2-25C4-430E-BF04-344D23926F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54654AE2-25C4-430E-BF04-344D23926F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54654AE2-25C4-430E-BF04-344D23926F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE7D22A-71E9-4444-B9C2-8157F91BFC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE7D22A-71E9-4444-B9C2-8157F91BFC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE7D22A-71E9-4444-B9C2-8157F91BFC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE7D22A-71E9-4444-B9C2-8157F91BFC79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3DC505B8-1135-4A79-A7C2-67F662B8DEC1}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{54654AE2-25C4-430E-BF04-344D23926F07} = {25A7B6AD-C462-48CD-8428-7CC76B9A5F1F}
+		{CFE7D22A-71E9-4444-B9C2-8157F91BFC79} = {25A7B6AD-C462-48CD-8428-7CC76B9A5F1F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DC505B8-1135-4A79-A7C2-67F662B8DEC1}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,8 @@
-﻿using System.Configuration;
+﻿using Lagrange.Desktop.Model;
+using System.Configuration;
 using System.Data;
 using System.Windows;
+using Lagrange.Desktop.View;
 
 namespace Lagrange.Desktop
 {
@@ -9,6 +11,7 @@ namespace Lagrange.Desktop
     /// </summary>
     public partial class App : Application
     {
+        
     }
 
 }

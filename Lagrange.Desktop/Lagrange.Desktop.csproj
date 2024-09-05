@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\Logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,8 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resources\Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
     <PackageReference Include="Panuon.WPF.UI" Version="1.2.3.1" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Lagrange.Core\Lagrange.Core\Lagrange.Core.csproj" />
+    <ProjectReference Include="..\Lagrange.Core\Lagrange.OneBot\Lagrange.OneBot.csproj" />
   </ItemGroup>
 
 </Project>

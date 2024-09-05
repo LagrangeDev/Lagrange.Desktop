@@ -6,37 +6,41 @@
     xmlns:local="clr-namespace:Lagrange.Desktop"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pu="https://opensource.panuon.com/wpf-ui"
+    xmlns:view="clr-namespace:Lagrange.Desktop.View"
     xmlns:viewModel="clr-namespace:Lagrange.Desktop.ViewModel"
     Title="MainWindow"
     Width="1600"
     Height="900"
+    d:DataContext="{d:DesignInstance Type=viewModel:MainWindowViewModel}"
+    Closed="Window_Closed"
+    Loaded="Window_Loaded"
     mc:Ignorable="d">
     <!--#region WindowBorder-->
     <pu:WindowXCaption.MinimizeButtonStyle>
         <Style BasedOn="{StaticResource {x:Static pu:WindowXCaption.MinimizeButtonStyleKey}}" TargetType="Button">
             <Setter Property="FontSize" Value="20" />
-            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}"/>
+            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}" />
             <Setter Property="Margin" Value="7,10,0,5" />
         </Style>
     </pu:WindowXCaption.MinimizeButtonStyle>
     <pu:WindowXCaption.MaximizeButtonStyle>
         <Style BasedOn="{StaticResource {x:Static pu:WindowXCaption.MaximizeButtonStyleKey}}" TargetType="Button">
             <Setter Property="FontSize" Value="20" />
-            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}"/>
+            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}" />
             <Setter Property="Margin" Value="7,10,0,5" />
         </Style>
     </pu:WindowXCaption.MaximizeButtonStyle>
     <pu:WindowXCaption.CloseButtonStyle>
         <Style BasedOn="{StaticResource {x:Static pu:WindowXCaption.CloseButtonStyleKey}}" TargetType="Button">
             <Setter Property="FontSize" Value="20" />
-            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}"/>
-            <Setter Property="pu:ButtonHelper.HoverForeground" Value="Red"/>
+            <Setter Property="pu:ButtonHelper.HoverBackground" Value="{x:Null}" />
+            <Setter Property="pu:ButtonHelper.HoverForeground" Value="Red" />
             <Setter Property="Margin" Value="7,10,10,5" />
         </Style>
     </pu:WindowXCaption.CloseButtonStyle>
     <pu:WindowXCaption.HeaderTemplate>
         <DataTemplate>
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
                 <Image
                     Height="50"
                     Margin="20,0,0,0"
@@ -59,7 +63,6 @@
         <viewModel:MainWindowViewModel />
     </pu:WindowX.DataContext>
     <pu:WindowX.Resources>
-        <local:DivideByConverter x:Key="DivideByConverter" />
         <Style
             x:Key="TabItemStyle"
             BasedOn="{StaticResource {x:Static pu:StyleKeys.TabItemStyle}}"
@@ -83,11 +86,6 @@
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="TabStripPlacement" Value="Left" />
         </Style>
-        <Style x:Key="TabItemBorderStyle" TargetType="Border">
-            <Setter Property="Margin" Value="10" />
-            <Setter Property="CornerRadius" Value="5" />
-            <Setter Property="Background" Value="#9AFFFFFF" />
-        </Style>
     </pu:WindowX.Resources>
     <Grid Margin="5" Background="Transparent">
         <Grid.RowDefinitions>
@@ -97,13 +95,48 @@
 
         <TabControl Style="{StaticResource MainTabControlStyle}">
             <TabItem Header="DashBoard" Style="{StaticResource TabItemStyle}">
-                <Border Style="{StaticResource TabItemBorderStyle}">
-                    <Grid />
-                </Border>
+                <view:DashBoardUserControl x:Name="DashBoard" DataContext="{Binding DashBoardUserControlViewModel}" />
             </TabItem>
-            <TabItem Header="Console" Style="{StaticResource TabItemStyle}" />
-            <TabItem Header="Config" Style="{StaticResource TabItemStyle}" />
+            <TabItem Header="Console" Style="{StaticResource TabItemStyle}">
+                <view:ConsoleUserControl x:Name="ConsoleControl" DataContext="{Binding ConsoleUserControlViewModel}" />
+            </TabItem>
+            <TabItem Header="Config" Style="{StaticResource TabItemStyle}">
+                <view:ConfiguringUserControl x:Name="Configuring" />
+            </TabItem>
             <TabItem Header="Setting" Style="{StaticResource TabItemStyle}" />
         </TabControl>
+        <StackPanel Grid.Row="1">
+            <Border
+                Margin="0,0,15,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Background="#9AFFFFFF"
+                CornerRadius="5">
+                <StackPanel
+                    Margin="5"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+                    <Ellipse
+                        Width="12"
+                        Height="12"
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Center"
+                        Fill="{Binding IsLagrangeRunning, Converter={StaticResource RunStateToColorConverter}}" />
+                    <TextBlock
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Center"
+                        FontSize="15"
+                        Foreground="{Binding IsLagrangeRunning, Converter={StaticResource RunStateToColorConverter}}"
+                        Text="{Binding IsLagrangeRunning, Converter={StaticResource RunStateToStringConverter}}" />
+                    <TextBlock
+                        Margin="0,0,10,0"
+                        VerticalAlignment="Center"
+                        FontSize="15"
+                        Foreground="Gray"
+                        Text="{Binding CurrentTime}" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
     </Grid>
 </pu:WindowX>

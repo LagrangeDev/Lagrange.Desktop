@@ -7,7 +7,36 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\ConfiguringUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ConsoleUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DashBoardUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\QrCodeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resources\SharedStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ConfiguringUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ConsoleUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DashBoardUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\QrCodeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
